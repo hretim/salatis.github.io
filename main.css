@@ -1,0 +1,102 @@
+body {
+    background-color: rgb(20, 20, 20);
+}
+
+h1 {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: Pacifico, serif;
+    font-size: 35px;
+    text-shadow: 3px 3px rgb(255, 0, 100);
+    animation: shadowanim 1s;
+}
+  
+p {
+    color: white;
+    font-family: Nunito, serif;
+    font-size: 20px;
+    text-align: center;
+    text-shadow: 2px 2px #000000;
+}
+
+p.button {
+    color: white;
+    font-family: Nunito, serif;
+    font-size: 20px;
+    text-align: left;
+    text-shadow: 2px 2px #000000;
+    top: 30%;
+    left: 2.5%;
+    position: absolute;
+    margin: 0 0 0 0;
+}
+
+p.longtext {
+    color: white;
+    font-family: Nunito, serif;
+    font-size: 20px;
+    text-align: left;
+    text-shadow: 2px 2px #000000;
+    top: 0;
+    left: 13.5%;
+    position: relative;
+    margin: 0 25% 0 0;
+}
+
+a {
+    color: rgb(185, 0, 125);
+    font-family: Nunito, serif; 
+}
+
+div.center {
+    width: 100vw;
+    height: 50vh;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    margin: -25vh 0 0 -50vw;
+    animation: showanim 0.75s;
+}
+
+
+div.top {
+    width: 90vw;
+    height: 10vh;
+    top: 0%;
+    left: 50%;
+    position: relative;
+    margin: 0 0 0 -45vw;
+    animation: showanim 0.5s; 
+}
+
+div.longtext {
+    width: 90vw;
+    height: auto;
+    top: 15px;
+    left: 50%;
+    position: relative;
+    margin: 0 0 0 -45vw;
+    animation: showanim1 1s; 
+}
+
+
+img {
+    filter: drop-shadow(4px 4px 1px rgba(0, 0, 0, 0.479));
+}
+
+@keyframes showanim {
+    0% {left : 40%; opacity: 0%;}
+    100% {left: 50%; opacity: 100%;}
+}
+
+@keyframes showanim1 {
+    0% {left : 0%; opacity: 0%;}
+    35% {left : 40vw; opacity: 0%;}
+    100% {left: 50%; opacity: 100%;}
+}
+
+@keyframes shadowanim {
+    0% {text-shadow: 0px 0px rgba(131, 0, 103, 0);}
+    65% {text-shadow: 0px 0px rgba(131, 0, 103, 0);}
+    100% {text-shadow: 3px 3px rgb(255, 0, 100);}
+}
