@@ -6,7 +6,7 @@ h1 {
     color: rgb(255, 255, 255);
     text-align: center;
     font-family: Pacifico, serif;
-    font-size: 35px;
+    font-size: 40px;
     text-shadow: 3px 3px rgb(255, 0, 100);
     animation: shadowanim 1s;
 }
@@ -70,6 +70,20 @@ a {
     color: rgb(185, 0, 125);
     font-size: 20px;
     font-family: Nunito, serif;
+    text-decoration: none;
+}
+a.none {
+    color: rgb(255, 255, 255);
+    font-size: 28px;
+    font-family: Pacifico, serif;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+a.none:hover {
+    color: rgb(255, 233, 194);
+}
+a:hover {
+    color: rgb(255, 0, 174);
 }
 
 ul {

@@ -1,0 +1,191 @@
+<html>
+    <head>
+        <title>Салатный | Проекты</title>
+        <link rel="stylesheet" href="../main.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico">
+        <meta content="Проекты СадСалата" property="og:title" />
+		<meta content="Те самые проекты." property="og:description" />
+		<meta content="https://sadsalat.github.io/salatis/something/projects.html" property="og:url" />
+		<meta content="https://sadsalat.github.io/salatis/photos/salatis.png" property="og:image" />
+		<meta content="#fa0096" data-react-helmet="true" name="theme-color" />
+        <link rel="icon" type="image/x-icon" href="../photos/salatis_hi.png">
+        <style>
+            * {
+              box-sizing: border-box;
+            }
+            
+            body {
+              margin: 0;
+              font-family: Arial;
+            }
+            
+            /* The grid: Four equal columns that floats next to each other */
+            .column {
+              float: left;
+              width: 20%;
+              padding: 10px;
+            }
+            
+            /* Style the images inside the grid */
+            .column img {
+              opacity: 0.8; 
+              cursor: pointer; 
+            }
+            
+            .column img:hover {
+              opacity: 1;
+            }
+            
+            /* Clear floats after the columns */
+            .row:after {
+              content: "";
+              display: table;
+              clear: both;
+            }
+            
+            /* The expanding image container */
+            .container {
+              position: center;
+              display: none;
+            }
+            
+            /* Expanding image text */
+            #imgtext {
+              position: absolute;
+              bottom: 15px;
+              left: 15px;
+              color: white;
+              font-size: 20px;
+            }
+            
+            /* Closable button inside the expanded image */
+            .closebtn {
+              position: absolute;
+              top: 10px;
+              right: 15px;
+              color: white;
+              font-size: 35px;
+              cursor: pointer;
+            }
+        </style>
+    </head>   
+    <body>
+
+        <div class="top" >
+            <h1><a href="../index.html" class = "none">Главный экран</a> | <a href="../something/projects.html" class = "none">Проекты</a> | <a href="../something/aboutme.html" class = "none">Обо мне...</a>| Галерея<hr></h1>   
+        </div>
+
+        <div class="longtext">
+            <h2><a href="#2023">Работы 2023-го</a> | | <a href="#2024">Работы 2024-го</a></h2>      
+        </div>
+
+        <div class="description">
+            <p>
+                Страница с творческими работами.<br> В основном в Blender-е <br> Так или иначе кому-то будет интерестно
+            </p>
+            <hr>
+        </div>
+
+        <div class="projects">
+            <hr>
+            <a name="2024"></a>
+            <h1>Работы 2024 года</h1>
+            <div class="row">
+                <div class="column">
+                  <img src="../photos/2024/plivisd.png" alt="plivis" style="width:100%" onclick="FuncView1(this);">
+                </div>
+                <div class="column">
+                  <img src="../photos/2024/salat_gloves2_r.png" alt="SalatGloves" style="width:100%" onclick="FuncView1(this);">
+                </div>
+                <div class="column">
+                  <img src="../photos/2024/salatcomicbackground_r.png" alt="ComicSalat" style="width:100%" onclick="FuncView1(this);">
+                </div>
+                <div class="column">
+                  <img src="../photos/2024/salatisplush.png" alt="SalatPlush" style="width:100%" onclick="FuncView1(this);">
+                </div>
+                <div class="column">
+                    <img src="../photos/2024/serveravatar.png" alt="Avatar" style="width:100%" onclick="FuncView1(this);">
+                  </div>
+              </div>
+              
+              <div class="container" style="text-align:center">
+                <img id="expandedImg" style="height: 75%;">
+                <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                <div id="imgtext"></div>
+              </div>
+            <hr>
+        </div>
+
+        <div class="projects">
+            <hr>
+            <a name="2023"></a>
+            <h1>Работы 2023 года</h1>
+            <div class="row">
+                <div class="column">
+                  <img src="../photos/2023/avatar_salatis_cellshaded.png" alt="plivis" style="width:100%" onclick="FuncView2(this);">
+                </div>
+                <div class="column">
+                    <img src="../photos/2023/banner_salatis_cellshaded.png" alt="plivis" style="width:100%" onclick="FuncView2(this);">
+                </div>
+                <div class="column">
+                    <img src="../photos/2023/salat_skate.png" alt="plivis" style="width:100%" onclick="FuncView2(this);">
+                </div>
+                <div class="column">
+                    <img src="../photos/2023/salatisplush.png" alt="plivis" style="width:100%" onclick="FuncView2(this);">
+                </div>
+                <div class="column">
+                    <img src="../photos/2023/salat_skate_big.png" alt="plivis" style="width:100%" onclick="FuncView2(this);">
+                </div>
+                <div class="column">
+                    <img src="../photos/2023/salat_skate_wide.png" alt="plivis" style="width:100%" onclick="FuncView2(this);">
+                </div>
+                <div class="column">
+                    <img src="../photos/2023/salat_skate_wide_yt.png" alt="plivis" style="width:100%" onclick="FuncView2(this);">
+                </div>
+                <div class="column">
+                    <img src="../photos/2023/salat_yhand_r.png" alt="plivis" style="width:100%" onclick="FuncView2(this);">
+                </div>
+                <div class="column">
+                    <img src="../photos/2023/salat_yhand_wide.png" alt="plivis" style="width:100%" onclick="FuncView2(this);">
+                </div>
+                <div class="column">
+                    <img src="../photos/2023/salatis_tactic1.png" alt="plivis" style="width:100%" onclick="FuncView2(this);">
+                </div>
+                <div class="column">
+                    <img src="../photos/2023/salatis_Yhand_v2_2.png" alt="plivis" style="width:100%" onclick="FuncView2(this);">
+                </div>
+              </div>
+              
+              <div class="container" style="text-align:center">
+                <img id="expandedImg2" style="height: 75%;">
+                <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                <div id="imgtext2"></div>
+              </div>
+            <hr>
+        </div>
+
+        <div class="podval">
+            <p class="center">
+                <br>
+                &nbsp;&copy; sadsalat 2023-2024 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Полезно полезно! &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Discord: sadsalat
+            </p>
+        </div>
+        <script>
+            function FuncView1(imgs) {
+              var expandImg = document.getElementById("expandedImg");
+              var imgText = document.getElementById("imgtext");
+              expandImg.src = imgs.src;
+              imgText.innerHTML = imgs.alt;
+              expandImg.parentElement.style.display = "block";
+            };
+            function FuncView2(imgs) {
+              var expandImg = document.getElementById("expandedImg2");
+              var imgText = document.getElementById("imgtext2");
+              expandImg.src = imgs.src;
+              imgText.innerHTML = imgs.alt;
+              expandImg.parentElement.style.display = "block";
+            }
+        </script>
+    </body>
+</html>
