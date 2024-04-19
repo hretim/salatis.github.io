@@ -71,6 +71,7 @@ a {
     font-size: 20px;
     font-family: Nunito, serif;
     text-decoration: none;
+    transition: color 0.5s;
 }
 a.none {
     color: rgb(255, 255, 255);
@@ -79,7 +80,21 @@ a.none {
     margin-left: 2%;
     margin-right: 2%;
 }
+
+a.opened {
+    text-decoration-line: underline;
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    font-family: Pacifico, serif;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
 a.none:hover {
+    color: rgb(255, 233, 194);
+}
+
+a.opened:hover {
     color: rgb(255, 233, 194);
 }
 a:hover {
